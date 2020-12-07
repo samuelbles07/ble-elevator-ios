@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79CAD16C257E0FF6006BB30A /* ElevatorButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD16B257E0FF6006BB30A /* ElevatorButtonApp.swift */; };
+		79CAD16E257E0FF6006BB30A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD16D257E0FF6006BB30A /* ContentView.swift */; };
+		79CAD170257E0FF9006BB30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CAD16F257E0FF9006BB30A /* Assets.xcassets */; };
+		79CAD173257E0FF9006BB30A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CAD172257E0FF9006BB30A /* Preview Assets.xcassets */; };
+		79CAD17E257E0FF9006BB30A /* ElevatorButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD17D257E0FF9006BB30A /* ElevatorButtonTests.swift */; };
+		79CAD189257E0FF9006BB30A /* ElevatorButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD188257E0FF9006BB30A /* ElevatorButtonUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79CAD17A257E0FF9006BB30A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79CAD160257E0FF6006BB30A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79CAD167257E0FF6006BB30A;
+			remoteInfo = ElevatorButton;
+		};
+		79CAD185257E0FF9006BB30A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79CAD160257E0FF6006BB30A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79CAD167257E0FF6006BB30A;
+			remoteInfo = ElevatorButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79CAD168257E0FF6006BB30A /* ElevatorButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElevatorButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CAD16B257E0FF6006BB30A /* ElevatorButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorButtonApp.swift; sourceTree = "<group>"; };
+		79CAD16D257E0FF6006BB30A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79CAD16F257E0FF9006BB30A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79CAD172257E0FF9006BB30A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79CAD174257E0FF9006BB30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CAD179257E0FF9006BB30A /* ElevatorButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevatorButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CAD17D257E0FF9006BB30A /* ElevatorButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorButtonTests.swift; sourceTree = "<group>"; };
+		79CAD17F257E0FF9006BB30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CAD184257E0FF9006BB30A /* ElevatorButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevatorButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CAD188257E0FF9006BB30A /* ElevatorButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorButtonUITests.swift; sourceTree = "<group>"; };
+		79CAD18A257E0FF9006BB30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79CAD165257E0FF6006BB30A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CAD176257E0FF9006BB30A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CAD181257E0FF9006BB30A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79CAD15F257E0FF6006BB30A = {
+			isa = PBXGroup;
+			children = (
+				79CAD16A257E0FF6006BB30A /* ElevatorButton */,
+				79CAD17C257E0FF9006BB30A /* ElevatorButtonTests */,
+				79CAD187257E0FF9006BB30A /* ElevatorButtonUITests */,
+				79CAD169257E0FF6006BB30A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79CAD169257E0FF6006BB30A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79CAD168257E0FF6006BB30A /* ElevatorButton.app */,
+				79CAD179257E0FF9006BB30A /* ElevatorButtonTests.xctest */,
+				79CAD184257E0FF9006BB30A /* ElevatorButtonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79CAD16A257E0FF6006BB30A /* ElevatorButton */ = {
+			isa = PBXGroup;
+			children = (
+				79CAD16B257E0FF6006BB30A /* ElevatorButtonApp.swift */,
+				79CAD16D257E0FF6006BB30A /* ContentView.swift */,
+				79CAD16F257E0FF9006BB30A /* Assets.xcassets */,
+				79CAD174257E0FF9006BB30A /* Info.plist */,
+				79CAD171257E0FF9006BB30A /* Preview Content */,
+			);
+			path = ElevatorButton;
+			sourceTree = "<group>";
+		};
+		79CAD171257E0FF9006BB30A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				79CAD172257E0FF9006BB30A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79CAD17C257E0FF9006BB30A /* ElevatorButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				79CAD17D257E0FF9006BB30A /* ElevatorButtonTests.swift */,
+				79CAD17F257E0FF9006BB30A /* Info.plist */,
+			);
+			path = ElevatorButtonTests;
+			sourceTree = "<group>";
+		};
+		79CAD187257E0FF9006BB30A /* ElevatorButtonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79CAD188257E0FF9006BB30A /* ElevatorButtonUITests.swift */,
+				79CAD18A257E0FF9006BB30A /* Info.plist */,
+			);
+			path = ElevatorButtonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79CAD167257E0FF6006BB30A /* ElevatorButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CAD18D257E0FF9006BB30A /* Build configuration list for PBXNativeTarget "ElevatorButton" */;
+			buildPhases = (
+				79CAD164257E0FF6006BB30A /* Sources */,
+				79CAD165257E0FF6006BB30A /* Frameworks */,
+				79CAD166257E0FF6006BB30A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElevatorButton;
+			productName = ElevatorButton;
+			productReference = 79CAD168257E0FF6006BB30A /* ElevatorButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79CAD178257E0FF9006BB30A /* ElevatorButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CAD190257E0FF9006BB30A /* Build configuration list for PBXNativeTarget "ElevatorButtonTests" */;
+			buildPhases = (
+				79CAD175257E0FF9006BB30A /* Sources */,
+				79CAD176257E0FF9006BB30A /* Frameworks */,
+				79CAD177257E0FF9006BB30A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79CAD17B257E0FF9006BB30A /* PBXTargetDependency */,
+			);
+			name = ElevatorButtonTests;
+			productName = ElevatorButtonTests;
+			productReference = 79CAD179257E0FF9006BB30A /* ElevatorButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79CAD183257E0FF9006BB30A /* ElevatorButtonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CAD193257E0FF9006BB30A /* Build configuration list for PBXNativeTarget "ElevatorButtonUITests" */;
+			buildPhases = (
+				79CAD180257E0FF9006BB30A /* Sources */,
+				79CAD181257E0FF9006BB30A /* Frameworks */,
+				79CAD182257E0FF9006BB30A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79CAD186257E0FF9006BB30A /* PBXTargetDependency */,
+			);
+			name = ElevatorButtonUITests;
+			productName = ElevatorButtonUITests;
+			productReference = 79CAD184257E0FF9006BB30A /* ElevatorButtonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79CAD160257E0FF6006BB30A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					79CAD167257E0FF6006BB30A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					79CAD178257E0FF9006BB30A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 79CAD167257E0FF6006BB30A;
+					};
+					79CAD183257E0FF9006BB30A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 79CAD167257E0FF6006BB30A;
+					};
+				};
+			};
+			buildConfigurationList = 79CAD163257E0FF6006BB30A /* Build configuration list for PBXProject "ElevatorButton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79CAD15F257E0FF6006BB30A;
+			productRefGroup = 79CAD169257E0FF6006BB30A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79CAD167257E0FF6006BB30A /* ElevatorButton */,
+				79CAD178257E0FF9006BB30A /* ElevatorButtonTests */,
+				79CAD183257E0FF9006BB30A /* ElevatorButtonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79CAD166257E0FF6006BB30A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CAD173257E0FF9006BB30A /* Preview Assets.xcassets in Resources */,
+				79CAD170257E0FF9006BB30A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CAD177257E0FF9006BB30A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CAD182257E0FF9006BB30A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79CAD164257E0FF6006BB30A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CAD16E257E0FF6006BB30A /* ContentView.swift in Sources */,
+				79CAD16C257E0FF6006BB30A /* ElevatorButtonApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CAD175257E0FF9006BB30A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CAD17E257E0FF9006BB30A /* ElevatorButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CAD180257E0FF9006BB30A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CAD189257E0FF9006BB30A /* ElevatorButtonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79CAD17B257E0FF9006BB30A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79CAD167257E0FF6006BB30A /* ElevatorButton */;
+			targetProxy = 79CAD17A257E0FF9006BB30A /* PBXContainerItemProxy */;
+		};
+		79CAD186257E0FF9006BB30A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79CAD167257E0FF6006BB30A /* ElevatorButton */;
+			targetProxy = 79CAD185257E0FF9006BB30A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		79CAD18B257E0FF9006BB30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79CAD18C257E0FF9006BB30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79CAD18E257E0FF9006BB30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ElevatorButton/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ElevatorButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelSiburian.ElevatorButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79CAD18F257E0FF9006BB30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ElevatorButton/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ElevatorButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelSiburian.ElevatorButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79CAD191257E0FF9006BB30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ElevatorButtonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelSiburian.ElevatorButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElevatorButton.app/ElevatorButton";
+			};
+			name = Debug;
+		};
+		79CAD192257E0FF9006BB30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ElevatorButtonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelSiburian.ElevatorButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElevatorButton.app/ElevatorButton";
+			};
+			name = Release;
+		};
+		79CAD194257E0FF9006BB30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ElevatorButtonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelSiburian.ElevatorButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElevatorButton;
+			};
+			name = Debug;
+		};
+		79CAD195257E0FF9006BB30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ElevatorButtonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelSiburian.ElevatorButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElevatorButton;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79CAD163257E0FF6006BB30A /* Build configuration list for PBXProject "ElevatorButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CAD18B257E0FF9006BB30A /* Debug */,
+				79CAD18C257E0FF9006BB30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79CAD18D257E0FF9006BB30A /* Build configuration list for PBXNativeTarget "ElevatorButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CAD18E257E0FF9006BB30A /* Debug */,
+				79CAD18F257E0FF9006BB30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79CAD190257E0FF9006BB30A /* Build configuration list for PBXNativeTarget "ElevatorButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CAD191257E0FF9006BB30A /* Debug */,
+				79CAD192257E0FF9006BB30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79CAD193257E0FF9006BB30A /* Build configuration list for PBXNativeTarget "ElevatorButtonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CAD194257E0FF9006BB30A /* Debug */,
+				79CAD195257E0FF9006BB30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79CAD160257E0FF6006BB30A /* Project object */;
+}

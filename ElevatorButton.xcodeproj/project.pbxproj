@@ -13,6 +13,7 @@
 		79CAD173257E0FF9006BB30A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CAD172257E0FF9006BB30A /* Preview Assets.xcassets */; };
 		79CAD17E257E0FF9006BB30A /* ElevatorButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD17D257E0FF9006BB30A /* ElevatorButtonTests.swift */; };
 		79CAD189257E0FF9006BB30A /* ElevatorButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD188257E0FF9006BB30A /* ElevatorButtonUITests.swift */; };
+		79CAD21E257E94FF006BB30A /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD21D257E94FF006BB30A /* BLEManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		79CAD184257E0FF9006BB30A /* ElevatorButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevatorButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CAD188257E0FF9006BB30A /* ElevatorButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorButtonUITests.swift; sourceTree = "<group>"; };
 		79CAD18A257E0FF9006BB30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CAD21D257E94FF006BB30A /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				79CAD16B257E0FF6006BB30A /* ElevatorButtonApp.swift */,
 				79CAD16D257E0FF6006BB30A /* ContentView.swift */,
+				79CAD21D257E94FF006BB30A /* BLEManager.swift */,
 				79CAD16F257E0FF9006BB30A /* Assets.xcassets */,
 				79CAD174257E0FF9006BB30A /* Info.plist */,
 				79CAD171257E0FF9006BB30A /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79CAD16E257E0FF6006BB30A /* ContentView.swift in Sources */,
+				79CAD21E257E94FF006BB30A /* BLEManager.swift in Sources */,
 				79CAD16C257E0FF6006BB30A /* ElevatorButtonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +423,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ElevatorButton/Preview Content\"";
+				DEVELOPMENT_TEAM = L2ARD7CX83;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ElevatorButton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -440,6 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ElevatorButton/Preview Content\"";
+				DEVELOPMENT_TEAM = L2ARD7CX83;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ElevatorButton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

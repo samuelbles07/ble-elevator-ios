@@ -14,6 +14,7 @@
 		79CAD17E257E0FF9006BB30A /* ElevatorButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD17D257E0FF9006BB30A /* ElevatorButtonTests.swift */; };
 		79CAD189257E0FF9006BB30A /* ElevatorButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD188257E0FF9006BB30A /* ElevatorButtonUITests.swift */; };
 		79CAD21E257E94FF006BB30A /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD21D257E94FF006BB30A /* BLEManager.swift */; };
+		79CAD245257EB6F5006BB30A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79CAD244257EB6F5006BB30A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		79CAD188257E0FF9006BB30A /* ElevatorButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorButtonUITests.swift; sourceTree = "<group>"; };
 		79CAD18A257E0FF9006BB30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79CAD21D257E94FF006BB30A /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		79CAD244257EB6F5006BB30A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		79CAD15F257E0FF6006BB30A = {
 			isa = PBXGroup;
 			children = (
+				79CAD244257EB6F5006BB30A /* README.md */,
 				79CAD16A257E0FF6006BB30A /* ElevatorButton */,
 				79CAD17C257E0FF9006BB30A /* ElevatorButtonTests */,
 				79CAD187257E0FF9006BB30A /* ElevatorButtonUITests */,
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79CAD245257EB6F5006BB30A /* README.md in Resources */,
 				79CAD173257E0FF9006BB30A /* Preview Assets.xcassets in Resources */,
 				79CAD170257E0FF9006BB30A /* Assets.xcassets in Resources */,
 			);

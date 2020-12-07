@@ -2,6 +2,7 @@
 
 #### TODO
 
-[X] BLE Handler
-[ ] Handle disconnect and reconnect
-[ ] Create real UI
+- [X] BLE Handler
+- [X] Create real UI
+- [ ] Handle disconnect and reconnect
+- [ ] Connect by RSSI constrain

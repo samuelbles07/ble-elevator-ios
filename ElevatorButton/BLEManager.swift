@@ -19,7 +19,8 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate {
     let tagetCharacteristic = CBUUID(string: "beb5483e-36e1-4688-b7f5-ea07361b26a8")
     
     @Published var elevatorCurrentFloor: UInt8 = 0
-    @Published var elevatorChosenFloor: UInt8 = 0
+    @Published var elevatorChosenFloor: [Bool] = [false, false, false , false]
+    var chosenFloor: UInt8 = 0
     
     override init() {
         super.init()
@@ -45,17 +46,9 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate {
         myPeripheral = peripheral
         myPeripheral.delegate = self
         
+        // Filter using RSSI here > RSSI.intValue
         myCentral.connect(myPeripheral, options: nil)
         
-//        if let name = advertisementData[CBAdvertisementDataLocalNameKey] as? String {
-//            peripheralName = name
-//        } else {
-//            peripheralName = "Unknown"
-//        }
-
-//        let newPeripheral = Periphral(id: peripherals.count, name: peripheralName, rssi: RSSI.intValue)
-//        print(newPeripheral)
-//        peripherals.append(newPeripheral)
     }
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
@@ -143,7 +136,6 @@ extension BLEManager: CBPeripheralDelegate {
         
         // Sanity check
         if data.capacity > 1 {
-            print(data)
             // To make sure only update when the values is changing
             // So view not continuously update
             if data[0] != elevatorCurrentFloor {
@@ -151,8 +143,10 @@ extension BLEManager: CBPeripheralDelegate {
                 print("Current floor: \(elevatorCurrentFloor)")
             }
             
-            if data[1] != elevatorChosenFloor {
-                elevatorChosenFloor = data[1]
+            if data[1] != chosenFloor {
+                chosenFloor = data[1]
+//                elevatorChosenFloor = data[1]
+                elevatorChosenFloor = Converter.floor(val: chosenFloor, length: 4)
                 print("Chosen floor: \(elevatorChosenFloor)")
             }
         }

@@ -11,7 +11,7 @@ import SwiftUI
 struct ElevatorButtonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(BLEManager())
         }
     }
 }

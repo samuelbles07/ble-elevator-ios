@@ -15,6 +15,8 @@
 		79CAD189257E0FF9006BB30A /* ElevatorButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD188257E0FF9006BB30A /* ElevatorButtonUITests.swift */; };
 		79CAD21E257E94FF006BB30A /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD21D257E94FF006BB30A /* BLEManager.swift */; };
 		79CAD245257EB6F5006BB30A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79CAD244257EB6F5006BB30A /* README.md */; };
+		79CAD24A257EC892006BB30A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD249257EC892006BB30A /* ButtonView.swift */; };
+		79CAD252257EEA32006BB30A /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAD251257EEA31006BB30A /* Converter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		79CAD18A257E0FF9006BB30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79CAD21D257E94FF006BB30A /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
 		79CAD244257EB6F5006BB30A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		79CAD249257EC892006BB30A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		79CAD251257EEA31006BB30A /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				79CAD16B257E0FF6006BB30A /* ElevatorButtonApp.swift */,
+				79CAD249257EC892006BB30A /* ButtonView.swift */,
 				79CAD16D257E0FF6006BB30A /* ContentView.swift */,
 				79CAD21D257E94FF006BB30A /* BLEManager.swift */,
+				79CAD251257EEA31006BB30A /* Converter.swift */,
 				79CAD16F257E0FF9006BB30A /* Assets.xcassets */,
 				79CAD174257E0FF9006BB30A /* Info.plist */,
 				79CAD171257E0FF9006BB30A /* Preview Content */,
@@ -268,7 +274,9 @@
 			files = (
 				79CAD16E257E0FF6006BB30A /* ContentView.swift in Sources */,
 				79CAD21E257E94FF006BB30A /* BLEManager.swift in Sources */,
+				79CAD24A257EC892006BB30A /* ButtonView.swift in Sources */,
 				79CAD16C257E0FF6006BB30A /* ElevatorButtonApp.swift in Sources */,
+				79CAD252257EEA32006BB30A /* Converter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

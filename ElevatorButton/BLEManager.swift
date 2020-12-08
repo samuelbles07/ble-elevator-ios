@@ -63,7 +63,8 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate {
     }
     
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
-        print("Disconnected")
+        print("Disconnected, start scanning")
+        self.startScanning()
     }
     
     func startScanning() {

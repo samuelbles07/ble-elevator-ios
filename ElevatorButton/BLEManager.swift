@@ -39,15 +39,21 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate {
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-//        var peripheralName: String!
         print(peripheral)
-        self.stopScanning()
-        
-        myPeripheral = peripheral
-        myPeripheral.delegate = self
-        
-        // Filter using RSSI here > RSSI.intValue
-        myCentral.connect(myPeripheral, options: nil)
+        print(RSSI.stringValue)
+
+        // To find range, use this formula -> 10 ^ ((-69 - (RSSI_VALUE))/(10 * 3))
+        // Reference: https://dzone.com/articles/formula-to-convert-the-rssi-value-of-the-ble-bluet
+        // Device txPower is 3dbm
+        if (RSSI.intValue < 80) { // 80 is around 2.3 meters
+            self.stopScanning()
+            myPeripheral = peripheral
+            myPeripheral.delegate = self
+            myCentral.connect(myPeripheral, options: nil)
+        } else {
+            print("Too far from device")
+            // TODO: popup
+        }
         
     }
     
@@ -56,12 +62,15 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate {
         myPeripheral.discoverServices([targetServiceUUID])
     }
     
+    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+        print("Disconnected")
+    }
+    
     func startScanning() {
         print("Start scanning...")
 
         if !myCentral.isScanning && self.isSwitchedOn {
-//            myCentral.scanForPeripherals(withServices: nil, options: nil)
-            myCentral.scanForPeripherals(withServices: [targetServiceUUID], options: nil)
+            myCentral.scanForPeripherals(withServices: [targetServiceUUID], options: [CBCentralManagerScanOptionAllowDuplicatesKey: true])
         }
     }
     

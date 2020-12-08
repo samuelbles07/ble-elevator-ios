@@ -18,6 +18,15 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate {
     let targetServiceUUID = CBUUID(string: "4fafc201-1fb5-459e-8fcc-c5c9c331914b")
     let tagetCharacteristic = CBUUID(string: "beb5483e-36e1-4688-b7f5-ea07361b26a8")
     
+    enum AppStatusType {
+        // btOff: Bluetooth currently offline by user
+        // notFound: Elevator device not found
+        // found: Elevator device found but not close enough by RSSI
+        // connected: App connected to elevator device
+        case btOff, notFound, found, connected
+    }
+    
+    @Published var appStatus: AppStatusType = .btOff
     @Published var elevatorCurrentFloor: UInt8 = 0
     @Published var elevatorChosenFloor: [Bool] = [false, false, false , false]
     var chosenFloor: UInt8 = 0
@@ -33,37 +42,42 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate {
         if central.state == .poweredOn {
             isSwitchedOn = true
             self.startScanning()
+            appStatus = .notFound
         } else {
             isSwitchedOn = false
+            appStatus = .btOff
         }
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        print(peripheral)
-        print(RSSI.stringValue)
+        
+        // Make sure only update when state is different
+        if appStatus != .found {
+            print("Elevator device found! Trying to connect...")
+            appStatus = .found
+        }
 
         // To find range, use this formula -> 10 ^ ((-69 - (RSSI_VALUE))/(10 * 3))
         // Reference: https://dzone.com/articles/formula-to-convert-the-rssi-value-of-the-ble-bluet
         // Device txPower is 3dbm
-        if (RSSI.intValue < 80) { // 80 is around 2.3 meters
+        if (RSSI.intValue > -80) { // 80 is around 2.3 meters
+            print("Connecting to device when RSSI: \(RSSI.stringValue)dbm")
             self.stopScanning()
             myPeripheral = peripheral
             myPeripheral.delegate = self
             myCentral.connect(myPeripheral, options: nil)
-        } else {
-            print("Too far from device")
-            // TODO: popup
         }
-        
     }
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         print("Device connected")
+        appStatus = .connected
         myPeripheral.discoverServices([targetServiceUUID])
     }
     
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
-        print("Disconnected, start scanning")
+        print("Disconnected! Restart scan..")
+        appStatus = .notFound
         self.startScanning()
     }
     
@@ -71,6 +85,7 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate {
         print("Start scanning...")
 
         if !myCentral.isScanning && self.isSwitchedOn {
+            // Scan peripherals and forget that peripheral already found, so didDiscover callback keep called!
             myCentral.scanForPeripherals(withServices: [targetServiceUUID], options: [CBCentralManagerScanOptionAllowDuplicatesKey: true])
         }
     }

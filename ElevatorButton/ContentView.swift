@@ -68,14 +68,40 @@ struct ContentView: View {
             .padding(.top)
             
             Spacer()
+
+            updateStatusDisplay(status: bleManager.appStatus)
+                .fontWeight(.medium)
+                .foregroundColor(.green)
+                .lineLimit(2)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .padding([.leading, .bottom, .trailing])
+                
+                
+//            Spacer()
         }
+    }
+    
+    private func updateStatusDisplay(status: BLEManager.AppStatusType) -> Text {
+        var statusText = ""
+        switch status {
+        case .btOff:
+            statusText = "Bluetooth offline, please turn on"
+        case .notFound:
+            statusText = "Device not found"
+        case .found:
+            statusText = "Device found, come closer to device"
+        case .connected:
+            statusText = "Connected to device, choose your destination floor"
+        }
+        
+        return Text(statusText)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
+            ContentView().environmentObject(BLEManager())
         }
     }
 }

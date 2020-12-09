@@ -119,7 +119,6 @@ extension BLEManager: CBPeripheralDelegate {
             }
             if myCharacteristic.properties.contains(.write) {
                 print("\(myCharacteristic.uuid): properties contains .write")
-//                self.setFloor(floor: Int(elevatorCurrentFloor))
             }
         }
     }
@@ -170,7 +169,6 @@ extension BLEManager: CBPeripheralDelegate {
             
             if data[1] != chosenFloor {
                 chosenFloor = data[1]
-//                elevatorChosenFloor = data[1]
                 elevatorChosenFloor = Converter.floor(val: chosenFloor, length: 4)
                 print("Chosen floor: \(elevatorChosenFloor)")
             }

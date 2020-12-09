@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         VStack (spacing: 10) {
             VStack {
-                Text("LANTAI SAAT INI")
+                Text("CURRENT FLOOR")
                     .fontWeight(.regular)
                     .font(.title2)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -38,7 +38,7 @@ struct ContentView: View {
             .padding(.bottom)
             
             VStack {
-                Text("LANTAI DIPILIH")
+                Text("CHOSEN FLOOR")
                     .fontWeight(.regular)
                     .font(.title2)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -75,9 +75,7 @@ struct ContentView: View {
                 .lineLimit(2)
                 .frame(maxWidth: .infinity, alignment: .center)
                 .padding([.leading, .bottom, .trailing])
-                
-                
-//            Spacer()
+            
         }
     }
     

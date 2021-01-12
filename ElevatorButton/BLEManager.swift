@@ -57,10 +57,9 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate {
             appStatus = .found
         }
 
-        // To find range, use this formula -> 10 ^ ((-69 - (RSSI_VALUE))/(10 * 3))
+        // To find range, use this formula -> 10 ^ ((-69 - (RSSI_VALUE))/(10 * 2))
         // Reference: https://dzone.com/articles/formula-to-convert-the-rssi-value-of-the-ble-bluet
-        // Device txPower is 3dbm
-        if (RSSI.intValue > -80) { // 80 is around 2.3 meters
+        if (RSSI.intValue > -79) { // 80 is around 2.3 meters
             print("Connecting to device when RSSI: \(RSSI.stringValue)dbm")
             self.stopScanning()
             myPeripheral = peripheral

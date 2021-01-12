@@ -1,5 +1,9 @@
 ## IOS app to control elevator
 
+NOTE:
+
+Apps only connect to elevator when range is under 3 meters. [See code](https://github.com/samuelbles07/ble-elevator-ios/blob/main/ElevatorButton/BLEManager.swift#L63)
+
 #### TODO
 
 - [X] BLE Handler
